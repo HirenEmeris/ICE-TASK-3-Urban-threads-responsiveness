@@ -1,0 +1,352 @@
+/* ============================================================ */
+/* URBAN THREADS - STARTER CSS                                  */
+/* ============================================================ */
+/* ICE TASK: Apply responsive design to this website           */
+/* LOs Covered: LO3, LO4                                       */
+/* Manual Pages: 152-159                                       */
+/* ============================================================ */
+
+/* ============================================================ */
+/* 1. BASE STYLES                                              */
+/* ============================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f0eb;
+    color: #1a1a2e;
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* ============================================================ */
+/* 2. HEADER                                                   */
+/* ============================================================ */
+
+header {
+    background: #1a1a2e;
+    border-bottom: 1px solid #29293a;
+}
+
+.site-header {
+    width: 1100px;
+    margin: 0 auto;
+    min-height: 78px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 24px;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: -1px;
+    white-space: nowrap;
+    color: white;
+}
+
+.logo span {
+    color: #e94560;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    white-space: nowrap;
+}
+
+nav a {
+    color: #b9b9c8;
+    font-size: 15px;
+    font-weight: 700;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.cart {
+    background: #e94560;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 999px;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* ============================================================ */
+/* 3. HERO                                                     */
+/* ============================================================ */
+
+.hero {
+    width: 1100px;
+    min-height: 420px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+
+    padding: 70px 40px;
+}
+
+.hero-content {
+    width: 650px;
+    flex-shrink: 0;
+}
+
+.eyebrow {
+    color: #e94560;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    font-size: 64px;
+    line-height: 1;
+    letter-spacing: -3px;
+    margin-bottom: 22px;
+}
+
+h1 span {
+    color: #e94560;
+}
+
+.hero-text {
+    color: #4a4a6a;
+    font-size: 18px;
+    max-width: 580px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 14px;
+}
+
+.btn {
+    padding: 14px 24px;
+    border-radius: 999px;
+    font-weight: 800;
+}
+
+.primary {
+    background: #e94560;
+    color: white;
+}
+
+.secondary {
+    border: 1px solid #ccc;
+    color: #1a1a2e;
+}
+
+.hero-card {
+    width: 280px;
+    height: 300px;
+    flex-shrink: 0;
+
+    background: linear-gradient(145deg, #e94560, #1a1a2e);
+    border-radius: 28px;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    box-shadow: 0 25px 70px rgba(233, 69, 96, 0.25);
+}
+
+.hero-emoji {
+    font-size: 75px;
+    margin-bottom: auto;
+}
+
+.hero-card p {
+    color: white;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: 2px;
+}
+
+.hero-card h2 {
+    color: white;
+    font-size: 26px;
+    margin: 3px 0;
+}
+
+.hero-card span {
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+}
+
+/* ============================================================ */
+/* 4. PRODUCT CARDS                                            */
+/* ============================================================ */
+
+.section {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 55px 40px 80px;
+}
+
+.section-heading {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.section-heading h2 {
+    font-size: 34px;
+    letter-spacing: -1px;
+}
+
+.see-all {
+    color: #e94560;
+    font-weight: 800;
+}
+
+.card-row {
+    display: flex;
+    gap: 18px;
+}
+
+.card {
+    width: 250px;
+    flex-shrink: 0;
+
+    background: white;
+    border: 1px solid #e8e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 150px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 70px;
+}
+
+.pink {
+    background: linear-gradient(135deg, #e94560, #ff8ac0);
+}
+
+.purple {
+    background: linear-gradient(135deg, #7c4dff, #b07cff);
+}
+
+.orange {
+    background: linear-gradient(135deg, #ff8a3d, #ffc15c);
+}
+
+.blue {
+    background: linear-gradient(135deg, #38bdf8, #6366f1);
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.tag {
+    font-size: 10px;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    color: #e94560;
+}
+
+.card h3 {
+    font-size: 20px;
+    margin: 5px 0 8px;
+}
+
+.card p {
+    color: #6c6c8e;
+    font-size: 14px;
+    min-height: 68px;
+}
+
+.card a {
+    color: #e94560;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+/* ============================================================ */
+/* 5. CTA                                                      */
+/* ============================================================ */
+
+.cta {
+    width: 1100px;
+    margin: 0 auto 70px;
+    padding: 55px 40px;
+    text-align: center;
+
+    background: #1a1a2e;
+    border-radius: 28px;
+}
+
+.cta .eyebrow {
+    color: #e94560;
+}
+
+.cta h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.cta > p:not(.eyebrow) {
+    color: #9999aa;
+}
+
+.moods {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.moods a {
+    background: #29293a;
+    border: 1px solid #38384c;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 999px;
+    font-weight: 700;
+}
+
+footer {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px 40px;
+    color: #6c6c8e;
+    font-size: 13px;
+    text-align: center;
+}
+
+/* ============================================================ */
+/* YOUR TASK: Add a media query at the bottom of this file     */
+/* ============================================================ */
+
+/* @media screen and (max-width: 768px) { */
+/*     Add your responsive fixes here */
+/* } */
